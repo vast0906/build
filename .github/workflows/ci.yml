@@ -131,7 +131,8 @@ jobs:
         BRANCH:
           - edge
           - current
-        boardfamily: meson
+        boardfamily: 
+          - meson
     env:
       BOARD_FAMILY: ${{ matrix.boardfamily }}
       BRANCH: ${{ matrix.branch }}
