@@ -162,7 +162,7 @@ jobs:
 
       - name: Build
         run: |
-          sudo chown $(id -u):$(id -g) -R ../build
+          sudo chown $(id -u):$(id -g) -R /home/runner/work/build/
           # Don't update remote cache
           export GITHUB_ACTIONS=false
           # Remove disabling DEBUG_INFO.
